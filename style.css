@@ -1,3 +1,171 @@
 .selector-for-some-widget {
     box-sizing: content-box;
   }
+
+  @font-face {
+    font-family: 'Raleway';
+    src: url('assets/Fonts/Raleway-VariableFont_wght.ttf');
+  }
+
+  body{
+    background: url('assets/Images/Background.jpg') center center no-repeat;
+    background-size: 1520px 1811px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  .container{
+    background-color: rgba(193, 209, 225, 0.8);
+    padding: auto;
+  }
+
+
+  /* headers and search bar */
+
+  .searchBar{
+    text-align: center;
+    margin: 50px;
+    
+  }
+
+  .searchBar h3{
+    color: #36597F;
+  }
+
+  .searchBar input{
+    color: #53769C;
+    border: #53769C 2px solid;
+    border-radius: 8px;
+    width: 328px;
+    box-shadow: 2px 2px 4px 0px #00000040;
+  }
+
+  .searchBar input:focus{
+    outline: none;
+  }
+
+  .searchBar input::placeholder{
+    color: #53769C;
+  }
+
+  .searchBar hr{
+    border: 2px solid #36597F;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  /* current weather + details */
+
+  .currentWeather{
+    margin: 50px;
+    justify-content: center;
+  }
+  
+  .currentWeather div{
+    margin: auto;
+  }
+
+  .currentWeather img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .currentWeather span{
+    font-size: 20px;
+  }
+
+  .currentWeather hr{
+  border: 2px solid #36597F;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .now{
+     border-right: 2px solid #36597F;
+     width: fit-content;
+  }
+
+  /* .currentWeather hr{
+    border-right: 2px solid #36597F;
+    transform: rotate(90deg);
+    height: fit-content;
+  } */
+
+
+
+  .info .city{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .info .country{
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .info .temp{
+    font-weight: 300;
+    font-size: 60px;
+  }
+
+  .state{
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  .details{
+    justify-content: space-evenly;
+  }
+
+  .details span{
+    height: fit-content;
+    margin-right: 10px;
+    border-bottom: 1px solid #36597F;
+    width: fit-content;
+  }
+
+    /* 3 days */
+
+    .dforecast{
+      text-align: center;
+      margin: 50px;
+    }
+
+    .dforecast img{
+      width: 130px;
+      height: 130px;
+    }
+
+    .dforecast div{
+      width: fit-content;
+      text-align: center;
+    }
+
+
+    /* more informations */
+
+    .moreInfo{
+      text-align: center;
+      margin: 30px;
+    }
+    
+    .val{
+      font-weight: 300;
+      font-size: 30px;
+    }    
+
+    .key{
+      font-size: 35px;
+    }
+
+  /* footer */
+  footer{
+    background-color: rgba(140, 150, 160, 0.7);
+  }
+
+  footer div{
+    text-align: center;
+  }
+  footer a{
+    text-decoration: none;
+    color: #CDC6BE;
+  }
