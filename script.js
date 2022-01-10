@@ -1,31 +1,22 @@
-<div class="moreInfo row w-100">
-<h3 class="h3">More Informations</h3>
-<div class="col w-50">
-        <div class="row">
-            <span class="col w-25">UV</span>
-            <span class="col val">4</span>
-        </div>
-        <div class="row">
-            <span class="col w-25">Pressure</span>
-            <span class="col val">1025 Mbar</span>
-        </div>
-        <div class="row">
-            <span class="col w-25">Cloud</span>
-            <span class="col val">75</span>
-        </div>
-</div>
-<div class="col w-50">
-        <div class="row">
-            <span class="col">Time Zone</span>
-            <span class="col">Africa/Casablanca</span>
-        </div>
-        <div class="row">
-            <span class="col">LocalTime</span>
-            <span class="col val">
-                <span class="col">2022-01-07</span>
-                <span class="col">11:09</span>
-            </span>
-        </div>
-</div>
+let input = document.querySelector('input');
+let data;
+let response;
 
-</div>
+async function getInfo(){
+    //fetching the current.json with the parameter of user input (city) and saved to response
+     response = await fetch('https://api.weatherapi.com/v1/current.json?' + new URLSearchParams({
+        key: 'd2a5c92c57bd4b5e98694019220601',
+        q: input.value,
+    }));
+    //the current.json with the (input.value) parameter
+    data = await response.json();
+    console.log(response.status);
+    //adding a condition to display an error in case response = {400 / 500}
+    console.log(data);
+    let current = data.current;
+    let location = data.location;
+    console.log(current.condition.text);
+    }
+
+
+

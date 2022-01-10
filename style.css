@@ -61,6 +61,16 @@
     margin: 50px;
     justify-content: center;
   }
+
+  .currentWeather button{
+    width: 33px;
+    height: 33px;
+  }
+
+  .fa-magnifying-glass::before{
+    height: 33px;
+    width: 33px;
+  }
   
   .currentWeather div{
     margin: auto;
@@ -81,10 +91,16 @@
   }
 
   .now{
-     border-right: 2px solid #36597F;
-     width: fit-content;
+    width: fit-content;
+    
   }
 
+  .now img {
+    border-right: 3px solid #36597F;
+    width: fit-content;
+  }
+  .now img {
+  }
   /* .currentWeather hr{
     border-right: 2px solid #36597F;
     transform: rotate(90deg);
@@ -105,6 +121,9 @@
   .info .temp{
     font-weight: 300;
     font-size: 60px;
+  }
+.date{
+    font-size: 20px;
   }
 
   .state{
@@ -146,8 +165,16 @@
     .moreInfo{
       text-align: center;
       margin: 30px;
+      padding: 30px;
+    }
+
+    .moreInfo div div .key{
+      width: fit-content;
     }
     
+    .moreInfo h3{
+      margin: 20px;
+    }
     .val{
       font-weight: 300;
       font-size: 30px;
@@ -164,6 +191,7 @@
 
   footer div{
     text-align: center;
+    padding: 20px;
   }
   footer a{
     text-decoration: none;
