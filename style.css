@@ -17,7 +17,7 @@
   }
 
   .container{
-    background-color: rgba(193, 209, 225, 0.8);
+    background-color: rgb(81, 118, 162, 0.5);
     padding: auto;
   }
 
@@ -138,8 +138,12 @@
   .details span{
     height: fit-content;
     margin-right: 10px;
-    border-bottom: 1px solid #36597F;
     width: fit-content;
+  }
+  
+  .details div{
+    border-bottom: 1px solid #36597F;
+
   }
 
     /* 3 days */
@@ -177,7 +181,7 @@
     }
     .val{
       font-weight: 300;
-      font-size: 30px;
+      font-size: 27px;
     }    
 
     .key{
