@@ -19,23 +19,23 @@
         <div class="searchBar row col">
             <h3 class="h3">Current Weather</h3>
             <label class="row-cols-auto">
-            <input class="form-control-sm col-auto"type="text" placeholder="Search For A Location">
-            <button onclick="getInfo()" class="btn col-auto"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class="form-control-sm col"type="text" placeholder="Search For A Location">
+            <button onclick="getInfo(input.value)" class="btn col"><i class="fa-solid fa-magnifying-glass"></i></button>
             </label>
 
             <hr>
         </div>
         <div class="currentWeather row d-flex col flex-row">
             <div class="now col-2">
-                <img src="" >
+                <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" >
                 <br>
-                <span></span>
+                <span>Mostly Cloudy</span>
             </div>
 
             <div class="info d-flex col-sm-4">
                 <div>
-                    <span class="city"></span> <br>
-                    <span class="country"></span> <br>
+                    <span class="city">Tangier</span> <br>
+                    <span class="country">Morocco</span> <br>
                 </div>
                 <div>
                     <span class="temp"></span>
@@ -43,9 +43,9 @@
             </div>
 
             <div class=" details col-sm-4 d-flex flex-column">
-                <div><span>Wind </span><span></span></div>
-                 <div> <span>RealFeel </span><span></span></div>
-                <div><span>Humidity  </span><span></span></div>
+                <div><span>Wind </span><span>E 34.9Km/h</span></div>
+                 <div> <span>RealFeel </span><span>9.6°C</span></div>
+                <div><span>Humidity  </span><span>72%</span></div>
             </div>
             <br>
             <hr>
@@ -54,26 +54,26 @@
 
         <div class="dforecast d-flex row">
                 <h3 class="h3">3 Days Forecast</h3>
-            <div class="col"><img src="" alt="sunny">
-                <span class="date"></span> <br>
+            <div class="col"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="sunny">
+                <span class="date">2022-01-12</span> <br>
             </div>
                 <div class="col">
-                    <span class="temp"></span> <br>
-                    <span class="state"></span>
+                    <span class="temp">13°C</span> <br>
+                    <span class="state">sunny</span>
                 </div>
-            <div class="col"><img src="" alt="sunny">
-                <span class="date"></span> <br>
+            <div class="col"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="sunny">
+                <span class="date">2022-01-13</span> <br>
             </div>
                 <div class="col">
-                    <span class="temp"></span> <br>
-                    <span class="state"></span>
+                    <span class="temp">13°C</span> <br>
+                    <span class="state">sunny</span>
                 </div>
-            <div class="col"><img src="" alt="sunny">
-                <span class="date"></span> <br>
+            <div class="col"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="sunny">
+                <span class="date">2022-01-14</span> <br>
             </div>
                 <div class="col ">
-                    <span class="temp"></span> <br>
-                    <span class="state"></span>
+                    <span class="temp">13°C</span> <br>
+                    <span class="state">sunny</span>
                 </div>
         </div>
 
@@ -82,27 +82,26 @@
             <div class="col w-50">
                     <div class="row">
                         <span class="col key">UV</span>
-                        <span class="col-sm val"></span>
+                        <span class="col-sm val">0</span>
                     </div>
                     <div class="row">
                         <span class="col key">Pressure</span>
-                        <span class="col-sm val"> </span>
+                        <span class="col-sm val">1014Mbar</span>
                     </div>
                     <div class="row">
                         <span class="col  key">Cloud</span>
-                        <span class="col val"></span>
+                        <span class="col val">75</span>
                     </div>
             </div>
             <div class="col w-50"> 
                     <div class="row">
                         <span class="col key">Time Zone</span>
-                        <span class="col val"></span>
+                        <span class="col val">Africa/Casablanca</span>
                     </div>
                     <div class="row">
                         <span class="col key">LocalTime</span>
                         <span class="col val">
-                            <span class="col"></span>
-                            <span class="col"></span>
+                            <span class="col">2022-01-13 9:49</span>
                         </span>
                     </div>
             </div>

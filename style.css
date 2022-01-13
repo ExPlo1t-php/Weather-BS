@@ -32,6 +32,7 @@
 
   .searchBar h3{
     color: #36597F;
+    font-size: 5                                                          0px;
   }
 
   .searchBar input{
@@ -168,8 +169,8 @@
 
     .moreInfo{
       text-align: center;
-      margin: 30px;
-      padding: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
     }
 
     .moreInfo div div .key{

@@ -8,16 +8,23 @@ let currentData;
 let forecastData;
 let responseC;
 let responseF;
-let q;
+let loc = undefined;
 
 
+ function getLocation(){
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        alert('geolocation is not supported');
+    }
+ }
 
 
-async function getInfo(){
+async function getInfo(i){
     //fetching the current.json with the parameter of user input (city) and saved to response
     responseC = await fetch('https://api.weatherapi.com/v1/current.json?' + new URLSearchParams({
         key: 'd2a5c92c57bd4b5e98694019220601',
-        q: input.value
+        q: i
     }));
     console.log('this is current data');
     //the current.json with the (input.value) parameter
@@ -51,7 +58,7 @@ async function getInfo(){
     //fetching the forecast.json with the parameter of user input (city) and saved to response
     responseF = await fetch('https://api.weatherapi.com/v1/forecast.json?' + new URLSearchParams({
         key: 'd2a5c92c57bd4b5e98694019220601',
-        q: input.value,
+        q: i,
         days:10,
     }));
     
@@ -69,29 +76,15 @@ async function getInfo(){
         forecast.children[j-1].children[0].src = fcast[i].day.condition.icon.replace('//', 'https://');
         forecast.children[j-1].children[1].innerHTML = fcast[i].date;
         forecast.children[j].children[0].innerHTML = `${fcast[i].day.avgtemp_c}°C`;
-        forecast.children[j].children[1].innerHTML = fcast[i].day.condition.text;
+        forecast.children[j].children[2].innerHTML = fcast[i].day.condition.text;
     }
     
     
 }
 
 
-// async function onload(){
-//     getInfo();
-// responseC = await fetch('https://api.weatherapi.com/v1/current.json?' + new URLSearchParams({
-//     key: 'd2a5c92c57bd4b5e98694019220601',
-//     q: 'Tangier',
-// }));
+getInfo('Tangier')
 
-// responseF = await fetch('https://api.weatherapi.com/v1/forecast.json?' + new URLSearchParams({
-//     key: 'd2a5c92c57bd4b5e98694019220601',
-//     q: 'Tangier',
-//     days:10,
-// }));
-
-// }
-
-// onload();
 
 
 
